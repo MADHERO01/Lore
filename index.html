@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>LORE PVT LTD - Premium Welding Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+    
+ 
+  
+  
+    /* Hero Section with Animated Spark */
+    .hero-banner {
+      background: linear-gradient(rgba(43,43,43,0.85), rgba(43,43,43,0.95)),
+                  url('/storage/emulated/0/Canva/Welding logo _20250313_191909_0000.jpg');
+      padding: 6rem 0;
+      border-bottom: 8px solid var(--welding-spark);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-banner::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, 
+        rgba(255,107,53,0.4) 20%, 
+        transparent 60%);
+      animation: sparkPulse 4s infinite;
+    }
+
+    @keyframes sparkPulse {
+      0% { transform: scale(0.8); opacity: 14; }
+      50% { opacity: 0.4; }
+      100% { transform: scale(1.4); opacity: 0; }
+    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            color: #fff;
+        }
+
+        .header {
+            background: url('IMG_20250313_174505.jpg') center/cover;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.6);
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #ff6b00, #ffa500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .offer-banner {
+            background: #ff6b00;
+            padding: 1rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial-slider {
+            overflow-x: auto;
+            white-space: nowrap;
+            padding: 2rem 0;
+        }
+
+        .testimonial {
+            display: inline-block;
+            width: 300px;
+            margin: 0 1rem;
+            background: rgba(255,255,255,0.1);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .contact-section {
+            text-align: center;
+            padding: 3rem;
+            background: #000;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #ff6b00;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 1rem;
+            transition: background 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #ff8500;
+        }
+
+        .map-container {
+            height: 400px;
+            margin: 2rem 0;
+            border-radius: 10px;
+            overflow: hidden;
+            
+            
+    :root {
+      --welding-spark: #FF6B35;
+      --industrial-steel: #2B2B2B;
+      --safety-vest: #FFD700;
+      --foundation-gray: #E0E0E0;
+    }
+
+    /* Hero Section with Animated Spark */
+    .hero-banner {
+      background: linear-gradient(rgba(43,43,43,0.85), rgba(43,43,43,0.95)),
+                  url('/storage/emulated/0/Canva/Welding logo _20250313_191849_0000.jpg');
+      padding: 6rem 0;
+      border-bottom: 8px solid var(--welding-spark);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-banner::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, 
+        rgba(255,107,53,0.4) 20%, 
+        transparent 60%);
+      animation: sparkPulse 4s infinite;
+    }
+
+    @keyframes sparkPulse {
+      0% { transform: scale(0.8); opacity: 0; }
+      50% { opacity: 0.4; }
+      100% { transform: scale(1.2); opacity: 0; }
+    }
+
+    /* Industrial Service Grid */
+    .service-foundry {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 3rem 0;
+      background: url('/storage/emulated/0/Canva/Welding logo _20250313_191849_0000.jpg');
+    }
+
+    .service-anvil {
+      background: rgba(255,255,255,0.95);
+      border: 3px solid var(--industrial-steel);
+      padding: 2rem;
+      box-shadow: 8px 8px 0 var(--welding-spark);
+      transition: transform 0.3s ease;
+    }
+
+    .service-anvil:hover {
+      transform: translateY(-5px);
+      box-shadow: 12px 12px 0 var(--safety-vest);
+    }
+
+    /* Emergency Flasher */
+    .emergency-forge {
+      background: repeating-linear-gradient(
+        45deg,
+        var(--safety-vest),
+        var(--safety-vest) 20px,
+        var(--industrial-steel) 20px,
+        var(--industrial-steel) 40px
+      );
+      color: var(--industrial-steel);
+      padding: 1.5rem;
+      font-weight: 900;
+      text-shadow: 1px 1px 0 white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    /* Legacy Badge */
+    .legacy-rivet {
+      background: var(--industrial-steel);
+      color: white;
+      padding: 1rem 2rem;
+      clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+      border-left: 5px solid var(--welding-spark);
+    }
+
+    /* Project Showcase */
+    .project-torch {
+      position: relative;
+      height: 400px;
+      background-size: cover;
+      margin: 2rem 0;
+    }
+
+    .project-torch::before {
+      content: attr(data-year);
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      font-size: 4rem;
+      color: rgba(255,107,53,0.3);
+      font-weight: 900;
+    }
+        }
+    </style>
+</head>
+<body>
+  
+  <header class="text-gray-700 body-front">
+    <div class="container mx-auto flex flex-wrap p-5 flex-cool md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currntColour" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl"LORE WELDING LEGACY</span>
+      </a>
+      <nav class="md:mr auto md:ml-4 md:py-1 md:pl-4 md:border-1 md:border-gray-400       flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900">menu</a>
+        <a class="mr-5 hover:text-gray-900">services</a>
+        <a class="mr-5 hover:text-gray-900">Faq</a>
+        
+      </nav>
+      <button class="inline-flex" items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 ms:mt-0>Contact Us
+        <svg fill="none" stroke="currntColor" stroke-linecap="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 517 7-7 7"></path>
+        </svg>
+      </button>
+       </div>
+     </header>
+    <header class="header">
+        <div class="header-content">
+            <h1>LORE WELDING SERVICES</h1>
+            <p class="offer-banner">🔥 15% OFF SUMMER SPECIAL - Call :+263719896143 🔥</p>
+            <p>30+ Years of Welding Excellence</p>
+        </div>
+    </header>
+
+    <div class="grid-container">
+        <div class="card">
+            <h2>🌟 Vision</h2>
+            <p>"Zimbabwe's Go-To Welding Innovators - Where Flawless Metalwork Meets Community Heartbeat."</p>
+        </div>
+
+        <div class="card">
+            <h2>🚀 Mission</h2>
+            <p>"Building safer, stronger communities through innovative welding solutions and empowering local talent."</p>
+        </div>
+    </div>
+
+    <section class="services">
+        <h2 style="text-align: center; margin: 2rem;">Our Services</h2>
+        <div class="grid-container">
+            <!-- Repeat for each service -->
+            <div class="card">
+                <h3>🏭 Industrial Welding</h3>
+                <p>
+                     
+- Structural steel for skyscrapers, bridges, factories  
+                    <p/>
+                    <p>   
+- Pipe welding & high-pressure system repairs  
+                    </p>
+                    
+- Heavy machinery fabrication & maintenance  
+
+                </p>
+            </div>
+            <!-- Add other services -->
+            <div class="card">
+                <h3>Residential Welding</h3>
+                <p>- Custom security gates (*anti-theft designs!*)  </p>
+            <p>- Balcony railings, staircases, & garden sculptures  </p>
+                <p>- Roofing, gutter repairs, & emergency storm damage fix </p>
+        </div>
+            
+             <div class="card">
+                <h3>Artistic & Speciality</h3>
+               
+                 <p>- Wedding venue arches, signage, & metal art </p> 
+                 <p>- Restoration of vintage cars, antique gates, & heritage sites  </p>
+        </div>
+            
+            <div class="card">
+                <h2>In Partnership with -:</h2>
+               
+                 <p>(1)Lamtech Motors :</p>
+                <p>Cell :  +263774572928</p> 
+                <p>email : lamiellore44@gmail.com</p>
+            
+                
+                 <p>(2)Madiro Academy Hub :  </p>
+                   <p>Cell :  +263774935019</p> 
+                <p>email : chrismadiro@gmail.com</p>
+          
+              
+        </div>
+    </section>
+
+
+    <script>
+        // Countdown timer for offer
+        const offerTimer = () => {
+            const offerDate = new Date('MARCH 22, 2025 23:59:59').getTime();
+            
+            setInterval(() => {
+                const now = new Date().getTime();
+                const distance = offerDate - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                
+                document.getElementById('countdown').innerHTML = 
+                    `${days}d ${hours}h LEFT!`;
+            }, 1000);
+        }
+
+        // Initialize when DOM loads
+        document.addEventListener('DOMContentLoaded', offerTimer);
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html b:version='2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+  <!-- Add Welding Theme Styles -->
+  <style>
+    :root {
+      --welding-spark: #FF6B35;
+      --industrial-steel: #2B2B2B;
+      --safety-vest: #FFD700;
+      --foundation-gray: #E0E0E0;
+    }
+
+    /* Hero Section with Animated Spark */
+    .hero-banner {
+      background: linear-gradient(rgba(43,43,43,0.85), rgba(43,43,43,0.95)),
+                  url('/storage/emulated/0/Canva/Welding logo _20250313_191909_0000.jpg');
+      padding: 6rem 0;
+      border-bottom: 8px solid var(--welding-spark);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-banner::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, 
+        rgba(255,107,53,0.4) 20%, 
+        transparent 60%);
+      animation: sparkPulse 4s infinite;
+    }
+
+    @keyframes sparkPulse {
+      0% { transform: scale(0.8); opacity: 14; }
+      50% { opacity: 0.4; }
+      100% { transform: scale(1.4); opacity: 0; }
+    }
+
+    /* Industrial Service Grid */
+    .service-foundry {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 3rem 0;
+      background: url('https://example.com/metal-texture.jpg');
+    }
+
+    .service-anvil {
+      background: rgba(255,255,255,0.95);
+      border: 3px solid var(--industrial-steel);
+      padding: 2rem;
+      box-shadow: 8px 8px 0 var(--welding-spark);
+      transition: transform 0.3s ease;
+    }
+
+    .service-anvil:hover {
+      transform: translateY(-5px);
+      box-shadow: 12px 12px 0 var(--safety-vest);
+    }
+
+    /* Emergency Flasher */
+    .emergency-forge {
+      background: repeating-linear-gradient(
+        45deg,
+        var(--safety-vest),
+        var(--safety-vest) 20px,
+        var(--industrial-steel) 20px,
+        var(--industrial-steel) 40px
+      );
+      color: var(--industrial-steel);
+      padding: 1.5rem;
+      font-weight: 900;
+      text-shadow: 1px 1px 0 white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    /* Legacy Badge */
+    .legacy-rivet {
+      background: var(--industrial-steel);
+      color: white;
+      padding: 1rem 2rem;
+      clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+      border-left: 5px solid var(--welding-spark);
+    }
+
+    /* Project Showcase */
+    .project-torch {
+      position: relative;
+      height: 400px;
+      background-size: cover;
+      margin: 2rem 0;
+    }
+
+    .project-torch::before {
+      content: attr(data-year);
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      font-size: 4rem;
+      color: rgba(255,107,53,0.3);
+      font-weight: 900;
+    }
+  </style>
+  
+  <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
+  
+  
+  
+  
+</head>
+
+<body>
+    
+  <header class="text-gray-700 body-front">
+    <div class="container mx-auto flex flex-wrap p-5 flex-cool md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currntColour" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl"LORE WELDING LEGACY</span>
+      </a>
+      <nav class="md:mr auto md:ml-4 md:py-1 md:pl-4 md:border-1 md:border-gray-400       flex flex-wrap items-center text-base justify-center">
+        <a href="/" class="mr-5 hover:text-gray-900">menu</a>
+        <a href="/" class="mr-5 hover:text-gray-900">services</a>
+        <a href="/" class="mr-5 hover:text-gray-900">Faq</a>
+        
+      </nav>
+      <button class="inline-flex" items-center bg-gray-200 border-0 py-1 px-3 
+        focus:outline-none hover:bg-gray-300 rounded text-base mt-4 ms:mt-0>Contact Us
+        <svg fill="none" stroke="currntColor" stroke-linecap="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 517 7-7 7"></path>
+        </svg>
+      </button>
+       </div
+  <amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-7077280427865785">
+</amp-auto-ads>
+  <!-- Emergency Banner -->
+  <div class="emergency-forge">
+  
+      
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero-banner">
+    <div class="centered">
+      <img src="/storage/emulated/0/Canva/Welding creative and dynamic _20250313_191747_0000.jpg" alt="LORE Welding" style="height: 120px; filter: drop-shadow(0 0 8px var(--welding-spark))">
+      <h1 "blog-title" style="color: var(--safety-vest); text-shadow: 3px 3px 0 var(--industrial-steel))">
+        HARARE'S WELDING LEGACY FOR DYNAMIC LIFE
+      </h1>
+      <div class="legacy-rivet">
+        TRUSTED SINCE 1993 • 3000+ PROJECTS COMPLETED
+        
+      </div>
+        
+        <div class="legacy-rivet">
+        QUALITY CUSTOMER SERVICE
+        
+      </div>
+        
+        <div class="legacy-rivet">
+        EXPERT WELDING CONTRACTORS
+        
+      </div>
+    </div>
+
+    <!-- Repeat for Residential/Artistic -->
+  </div>
+
+  <!-- Project Timeline -->
+  <div class="project-torch" 
+    ')"
+       data-year="1993">
+    <div class="project-plaque">
+      <h4>OUR FIRST MASTERPIECE</h4>
+      <p>Borrowdale Bridge Structural Welding</p>
+      <em>Still standing strong after 30+ years!</em>
+    </div>
+      
+      
+    <section class="testimonial-slider">
+        <!-- Testimonial cards -->
+        <div class="testimonial">
+            <p>"LORE saved our factory shutdown with overnight repairs!"</p>
+            <p>- Tinashe, ZimSteel and aluminium Ltd</p>
+        </div>
+        <!-- Add more testimonials -->
+    </section>
+    
+    
+    <section class="testimonial-slider">
+        <!-- Testimonial cards -->
+        <div class="testimonial">
+            <p>"LORE PVT LTD , fixed my corrugated gates and windows."</p>
+            <p>- Chrizho, MADIRO ACADEMY HUB Pvt Ltd</p>
+        </div>
+        <!-- Add more testimonials -->
+    </section>
+
+
+        <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> 10613 Hatcliffe Consortium, Borrowdale Harare</p>
+            <p><i class="fas fa-clock"></i> Mon-Sat: 7:30 AM - 7:00 PM | Sun: Emergency Only</p>
+            <p><i class="fas fa-email"></i> •info@loreweldingsoultions.co.zw</p>
+        </div>
+    </section>
+  </div>
+
+  <!-- Community Commitment -->
+  <div class="welding-altar" style="background: var(--foundation-gray))">
+    <div class="centered">
+      <h2>WE WELD FOR HARARE</h2>
+      <div class="community-rivets">
+        <div class="rivet">
+          <img src="/storage/emulated/0/DCIM/Camera/IMG_20250313_171758.jpg" alt="School Project">
+          <p>Free Security Gates for 15+ Schools</p>
+        </div>
+          
+          
+        <div class="rivet">
+          <img src="/storage/emulated/0/DCIM/Camera/IMG_20250314_172731.jpg""alt="ALUMINIUM WINDOWS">
+          <p> ALUMINIUM WINDOWS</p>
+              
+            
+        </div>
+          
+          
+        <div class="rivet">
+          <img src="/storage/emulated/0/DCIM/Camera/IMG_20250313_174505.jpg" alt="Storm Damage">
+          <p> Recovery</p>
+              
+            
+        </div>
+           
+        <div class="rivet">
+          <img src="/storage/emulated/0/DCIM/Camera/IMG_20250313_174505.jpg" alt="Storm Damage">
+          <p> Recovery</p>
+              
+            
+        </div>
+           
+        <div class="rivet">
+          <img src="/storage/emulated/0/DCIM/Camera/IMG_20250313_174505.jpg" alt="Storm Damage">
+          <p> Recovery</p>
+              
+            
+        </div>
+      
+    <section class="contact-section">
+        <h2>Ready to Spark Your Project?</h2>
+        <a href="+263719896143" class="cta-button">
+            <i class="fas fa-phone"></i> CALL NOW
+        </a>
+        
+        <a href="chrismadiro@gmail.com" class="cta-button">
+            <i class="fas fa-email"></i> EMAIL US
+        </a>
+        
+        
+        <a href="263719896143" class="cta-button">
+            <i class="fas fa-phone"></i> JOBS
+        </a>
+        
+        <a href="https://whatsapp.com/channel/0029Vaeipd33LdQcUT46bt2O" class="cta-button">
+            <i class="fas fa-phone"></i> DISCOVER MORE
+        </a>
+        <div class="map-container">
+            <!-- Google Maps Embed -->
+            <iframe 
+                src="https://maps.app.goo.gl/MLGnradQEfxfP5K18"
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+        
+   <section class="testimonial-slider">
+        <!-- Testimonial cards -->
+        <div class="testimonial">
+            <p>"LORE PVT LTD , fixed my corrugated gates and windows."</p>
+            <p>- Chrizho, MADIRO ACADEMY HUB Pvt Ltd</p>
+        </div>
+        <!-- Add more testimonials -->
+    </section>
+
+</html>
